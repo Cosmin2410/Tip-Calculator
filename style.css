@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+  background-color: hsl(185, 41%, 84%);
+  /* margin-top: 30rem; */
+}
+
+/* - Strong cyan: hsl(172, 67%, 45%)
+
+### Neutral
+
+- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Dark grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%) */
+
+h1 {
+  text-align: center;
+  color: hsl(186, 14%, 43%);
+}
+
+.calculator {
+  background-color: hsl(0, 0%, 100%);
+  width: 43rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 3rem;
+}
+
+/* Left Box style */
+
+.left-box {
+  width: 16.5rem;
+}
+
+.left-box h3 {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  color: hsl(186, 14%, 43%);
+}
+
+/* Text area from left box */
+
+.bill-amount,
+.percent-amount,
+.people-amount {
+  all: unset;
+  cursor: pointer;
+  border: none;
+  background-color: hsl(180, 46%, 86%);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.bill-amount,
+.people-amount {
+  height: 2rem;
+  width: 16.5rem;
+}
+
+.bill-amount {
+  margin-bottom: 1.5rem;
+}
+
+.bill-amount:hover,
+.percent-amount:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.percent-amount:hover {
+  background-color: white;
+}
+
+/* Tip Buttons and text area */
+
+.tip-percent {
+  display: grid;
+  grid-template-columns: repeat(3, 5rem);
+  gap: 0.7rem;
+}
+
+.tip-percent h3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.tip-percent button {
+  width: 5rem;
+  height: 2rem;
+  font-size: 23px;
+  border: none;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 5px;
+}
+
+.tip-percent button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+.percent-amount {
+  box-sizing: border-box;
+}
+
+/* Number of people titles and text area */
+
+.people-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.no-zero {
+  display: none;
+  color: orangered !important;
+}
+
+/* Calculate Button */
+
+.calc {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.calc button {
+  width: 13rem;
+  height: 2rem;
+  background-color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.calc button:hover {
+  cursor: pointer;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+/* Right box */
+
+.right-box {
+  background-color: hsl(183, 100%, 15%);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 20rem;
+  height: 100%;
+}
+
+/* Tip amount title and sum */
+
+.tip-amount,
+.total-person {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+}
+
+.tip-amount h3,
+.total-person h3 {
+  font-size: 1rem;
+  color: white;
+}
+
+.tip-amount span,
+.total-person span {
+  font-size: 0.9rem;
+  color: lightgray;
+}
+
+.tip-amount p,
+.total-person p {
+  font-size: 2rem;
+  color: hsl(172, 67%, 45%);
+  font-weight: bold;
+}
+
+/* Reset button */
+
+.reset-button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 7.5rem;
+}
+
+.reset-button button {
+  width: 13rem;
+  height: 2rem;
+  background-color: hsl(172, 67%, 45%);
+  border: none;
+  border-radius: 5px;
+  color: hsl(183, 100%, 15%);
+  font-size: 1.1rem;
+}
+
+.reset-button button:hover {
+  background-color: hsl(185, 41%, 84%);
+  cursor: pointer;
+}

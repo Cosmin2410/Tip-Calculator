@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Poppins:wght@600&family=Raleway&family=Roboto&family=Rubik:wght@500&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <h1>SPLI<br />TTER</h1>
+    <div class="calculator">
+      <div class="left-box">
+        <div class="bill">
+          <h3>Bill</h3>
+          <input type="number" min="0" class="bill-amount" />
+        </div>
+
+        <div class="tip-percent">
+          <h3>Select Tip %</h3>
+          <button class="percent">5%</button>
+          <button class="percent">10%</button>
+          <button class="percent">15%</button>
+          <button class="percent">25%</button>
+          <button class="percent">50%</button>
+          <input type="number" min="0" max="1000" class="percent-amount" />
+        </div>
+
+        <div class="people">
+          <div class="people-title">
+            <h3>Number of People</h3>
+            <h3 class="no-zero">Can't be zero</h3>
+          </div>
+          <input type="number" min="0" max="100" class="people-amount" />
+        </div>
+        <div class="calc">
+          <button>CALCULATE</button>
+        </div>
+      </div>
+
+      <div class="right-box">
+        <div class="tip-amount">
+          <h3>
+            Tip Amount <br />
+            <span> /person</span>
+          </h3>
+          <p class="tip-money">$0.00</p>
+        </div>
+
+        <div class="total-person">
+          <h3>
+            Total <br />
+            <span> /person</span>
+          </h3>
+          <p class="person-money">$0.00</p>
+        </div>
+
+        <div class="reset-button">
+          <button class="reset-btn">RESET</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!-- <div class="attribution">
+  Challenge by
+  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a
+  >. Coded by <a href="#">Your Name Here</a>. 
+</div>
+-->
