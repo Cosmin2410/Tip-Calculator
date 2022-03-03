@@ -70,6 +70,10 @@ function calculateBill() {
 
   tipMoney.innerHTML = `$${tipAmount.toFixed(2)}`;
   personMoney.innerHTML = `$${totalPerson.toFixed(2)}`;
+  if (totalPerson === NaN) {
+    tipMoney.innerHTML = `$0.00`;
+    personMoney.innerHTML = `$0.00`;
+  }
 }
 
 function resetGame() {

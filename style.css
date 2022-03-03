@@ -7,19 +7,7 @@ body {
   padding: 0;
   font-family: 'Space Mono', monospace;
   background-color: hsl(185, 41%, 84%);
-  /* margin-top: 30rem; */
 }
-
-/* - Strong cyan: hsl(172, 67%, 45%)
-
-### Neutral
-
-- Very dark cyan: hsl(183, 100%, 15%)
-- Dark grayish cyan: hsl(186, 14%, 43%)
-- Dark grayish cyan: hsl(184, 14%, 56%)
-- Light grayish cyan: hsl(185, 41%, 84%)
-- Light grayish cyan: hsl(189, 41%, 97%)
-- White: hsl(0, 0%, 100%) */
 
 h1 {
   text-align: center;
@@ -215,4 +203,20 @@ h1 {
 .reset-button button:hover {
   background-color: hsl(185, 41%, 84%);
   cursor: pointer;
+}
+
+/* Mobile Friendly media querie */
+
+@media (max-width: 43.75em) {
+  .calculator {
+    grid-template-columns: 1fr;
+    width: 23rem;
+  }
+
+  .left-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 }
